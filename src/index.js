@@ -11,24 +11,32 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AppDemoMemo from "./AppDemoMemo";
 import AppDemoUseRef from "./AppDemoUseRef";
 import AppDemoUseHook from "./AppDemoUseHook";
+import AppDemoBootstrap from "./AppDemoBootstrap";
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
-    <div className="row">
+    <AppDemoBootstrap />
+    {/* <div className="row">
       <div className="col-lg">
         <p>AppDemoContextReducer.js</p>
         <AppDemoContextReducer />
         <p>AppDemoMemo.js</p>
-        <AppDemoMemo/>
+        <AppDemoMemo />
       </div>
       <div className="col-lg">
         <p>AppDemoContext.js</p>
         <AppDemoContext />
-        <p><br/>AppDemoUseRef.js</p>
-        <AppDemoUseRef/>
-        <p><br/>AppDemoUseHook.js</p>
-        <AppDemoUseHook/>
+        <p>
+          <br />
+          AppDemoUseRef.js
+        </p>
+        <AppDemoUseRef />
+        <p>
+          <br />
+          AppDemoUseHook.js
+        </p>
+        <AppDemoUseHook />
       </div>
       <div className="col-lg">
         <p>AppDemoReducer.js</p>
@@ -38,7 +46,7 @@ ReactDOM.render(
         <p>AppDemoReducerEffect.js</p>
         <AppDemoReducerEffect />
       </div>
-    </div>
+    </div> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

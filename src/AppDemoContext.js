@@ -12,8 +12,10 @@ const AppDemoContext = () => {
   }
 
   return (
-    <div className="App">
-      <p>Name: <input type="text" onChange={onChangeName} value={name} /></p>
+    <div className="container">
+      <p>
+        Name: <input type="text" onChange={onChangeName} value={name} />
+      </p>
       <NameContext.Provider value={name}>
         <ColorContext.Provider value={"red"}>
           <ComponentA />
