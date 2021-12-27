@@ -22,7 +22,7 @@ const reducer = (state = initialState, { type, payload }) => {
 const AppDemoContextReducer = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <div className="App">
+    <div className="container">
       <CounterContext.Provider value={{ counter: state.value, dispatch }}>
         Counter A {state.value}
         <CounterA />

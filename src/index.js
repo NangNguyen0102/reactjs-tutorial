@@ -1,52 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-//import App from './App';
 import reportWebVitals from "./reportWebVitals";
-import AppDemoContext from "./AppDemoContext";
-import AppDemoReducer from "./AppDemoReducer";
-import AppDemoContextReducer from "./AppDemoContextReducer";
-import AppDemoReducerEffect from "./AppDemoReducerEffect";
-import "bootstrap/dist/css/bootstrap.min.css";
-import AppDemoMemo from "./AppDemoMemo";
-import AppDemoUseRef from "./AppDemoUseRef";
-import AppDemoUseHook from "./AppDemoUseHook";
-import AppDemoBootstrap from "./AppDemoBootstrap";
+import EntryPoint from "./EntryPoint";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <AppDemoBootstrap />
-    {/* <div className="row">
-      <div className="col-lg">
-        <p>AppDemoContextReducer.js</p>
-        <AppDemoContextReducer />
-        <p>AppDemoMemo.js</p>
-        <AppDemoMemo />
-      </div>
-      <div className="col-lg">
-        <p>AppDemoContext.js</p>
-        <AppDemoContext />
-        <p>
-          <br />
-          AppDemoUseRef.js
-        </p>
-        <AppDemoUseRef />
-        <p>
-          <br />
-          AppDemoUseHook.js
-        </p>
-        <AppDemoUseHook />
-      </div>
-      <div className="col-lg">
-        <p>AppDemoReducer.js</p>
-        <AppDemoReducer />
-      </div>
-      <div className="col-lg">
-        <p>AppDemoReducerEffect.js</p>
-        <AppDemoReducerEffect />
-      </div>
-    </div> */}
+    {/* <AppDemoBootstrap /> */}
+    <EntryPoint />
   </React.StrictMode>,
   document.getElementById("root")
 );

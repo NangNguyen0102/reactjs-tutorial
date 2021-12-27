@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, ButtonGroup, Badge } from "reactstrap";
 import useCounter from "../Hooks/useCounter";
 

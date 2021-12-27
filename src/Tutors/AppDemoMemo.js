@@ -1,12 +1,10 @@
 import React, { useState, useMemo } from "react";
 import ComponentTestMemo from "./Components/ComponentTestMemo";
-import { Button, ButtonGroup } from "reactstrap";
 import ComponentTestMemo2 from "./Components/ComponentTestMemo2";
 
 const AppDemoMemo = () => {
   const [countA, setCountA] = useState(0);
   const [countB, setCountB] = useState(0);
-  const [isUseMemo, setIsUseMemo] = useState(false)
   const incCounterA = () => {
     setCountA(countA + 1);
   };
@@ -14,10 +12,10 @@ const AppDemoMemo = () => {
     setCountB(countB + 1);
   };
   const memoComponentTest = useMemo(() => {
-    return <ComponentTestMemo count={countA}/>;
+    return <ComponentTestMemo count={countA} />;
   }, [countA]);
   return (
-    <div>
+    <div className="container">
       {/* <ButtonGroup>
         <Button color="primary" onClick={() => setIsUseMemo(true)}>
           Use Memo
@@ -32,7 +30,7 @@ const AppDemoMemo = () => {
         <button onClick={incCounterB}>Increment B</button>
       </p>
       {memoComponentTest}
-      <ComponentTestMemo2 count={countB}/>
+      <ComponentTestMemo2 count={countB} />
     </div>
   );
 };

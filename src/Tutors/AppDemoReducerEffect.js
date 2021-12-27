@@ -57,7 +57,7 @@ const AppDemoReducerEffect = () => {
     </ListGroup>
   );
   return (
-    <div>
+    <div className="container">
       {state.loading ? "Loading..." : state.error ? state.error : listMarkup}
     </div>
   );

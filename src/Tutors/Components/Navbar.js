@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import Auth from "../Auth";
 
 const Navbar = () => {
@@ -21,9 +21,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a class="navbar-brand" href="#">
+        <Link class="navbar-brand" to="/">
           ReactJS Tutor
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -53,16 +53,15 @@ const Navbar = () => {
               </NavLink>
             </li>
             <li class="nav-item dropdown">
-              <a
+              <span
                 class="nav-link dropdown-toggle"
-                href="#"
                 id="navbarDropdown"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown
-              </a>
+                Demo
+              </span>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <NavLink className="dropdown-item" to="/demo-context">
@@ -103,6 +102,16 @@ const Navbar = () => {
                 <li>
                   <NavLink className="dropdown-item" to="/demo-use-ref">
                     Demo Use Ref
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/demo-redux">
+                    Demo Redux
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink className="dropdown-item" to="/demo-redux-toolkit">
+                    Demo Redux Toolkit
                   </NavLink>
                 </li>
               </ul>

@@ -20,9 +20,6 @@ const Home = () => {
               <h5 className="card-title">{x.title}</h5>
             </Link>
             <p className="card-text">{x.body}</p>
-            <a href="#" className="btn btn-primary">
-              Go somewhere
-            </a>
           </div>
         </div>
       ))
